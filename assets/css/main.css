@@ -25,6 +25,12 @@ body {
   padding: 50px 100px;
 }
 
+.accent-color {
+  color: var(--accent-color);
+}
+
+/* header styles  */
+
 .header {
   display: flex;
   align-items: center;
@@ -64,4 +70,46 @@ body {
   .btn {
     display: none;
   }
+}
+
+/* main content */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.main h1 {
+  font-size: 150px;
+  line-height: 1;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main p {
+  color: var(--text-color);
+  margin-top: 150px;
+  font-size: 35px;
+  text-align: center;
+  padding: 0px 20%;
+}
+
+.action-btn {
+  margin-top: 150px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: var(--text-color);
+  background: var(--accent-color);
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  opacity: 0.5;
 }
