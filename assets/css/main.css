@@ -20,3 +20,34 @@ body {
   background: var(--primary-color);
   font-family: 'Nunito', sans-serif;
 }
+
+.root {
+  padding: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 150px;
+}
+
+.btn {
+  padding: 20px 28px;
+  font-size: 22px;
+  border-radius: 12px;
+  color: var(--text-color);
+  background: var(--secondary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
