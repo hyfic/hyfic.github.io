@@ -113,3 +113,61 @@ body {
 .action-btn:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 1100px) {
+  .main {
+    margin-top: 150px;
+  }
+
+  .main h1 {
+    font-size: 100px;
+  }
+
+  .main p {
+    padding: 0px 10%;
+    font-size: 28px;
+  }
+
+  .action-btn {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    margin-top: 100px;
+  }
+
+  .main p {
+    padding: 0px 5%;
+    margin-top: 80px;
+  }
+
+  .action-btn {
+    font-size: 22px;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 632px) {
+  .root {
+    padding: 50px 20px;
+  }
+
+  .main {
+    margin-top: 80px;
+  }
+
+  .main h1 {
+    font-size: 80px;
+  }
+
+  .main p {
+    padding: 0px 5%;
+    font-size: 22px;
+  }
+
+  .action-btn {
+    font-size: 20px;
+  }
+}
