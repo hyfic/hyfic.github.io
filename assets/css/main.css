@@ -22,7 +22,7 @@ body {
 }
 
 .root {
-  padding: 50px;
+  padding: 50px 100px;
 }
 
 .header {
@@ -32,11 +32,11 @@ body {
 }
 
 .header img {
-  width: 150px;
+  width: 120px;
 }
 
 .btn {
-  padding: 20px 28px;
+  padding: 18px 22px;
   font-size: 22px;
   border-radius: 12px;
   color: var(--text-color);
@@ -50,4 +50,18 @@ body {
 .btn:hover {
   background: var(--accent-color);
   color: var(--primary-color);
+}
+
+@media (max-width: 800px) {
+  .root {
+    padding: 50px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .btn {
+    display: none;
+  }
 }
