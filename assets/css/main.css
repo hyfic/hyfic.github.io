@@ -211,18 +211,21 @@ body {
   border: none;
   outline: none;
   background: var(--primary-color);
-  border-radius: 15px;
+  border-radius: 12px;
   margin-top: 30px;
   padding: 15px;
-  color: var(--text-opacity-color);
+  height: 50px;
   width: 100%;
+  color: var(--text-opacity-color);
   font-size: 18px;
 }
 
 .dialogue button {
   margin-top: 10px;
-  padding: 12px;
   width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  margin-top: 10px;
   border-radius: 15px;
   border: none;
   outline: none;
