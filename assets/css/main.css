@@ -192,3 +192,47 @@ body {
   font-size: 20px;
   text-align: center;
 }
+
+/* dialogue */
+
+.dialogue {
+  color: var(--text-color);
+}
+
+.dialogue h1 {
+  font-family: 'Kanit', sans-serif;
+}
+
+.dialogue p {
+  margin-top: 30px;
+}
+
+.dialogue input {
+  border: none;
+  outline: none;
+  background: var(--primary-color);
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 15px;
+  color: var(--text-opacity-color);
+  width: 100%;
+  font-size: 18px;
+}
+
+.dialogue button {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: var(--accent-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dialogue button:hover {
+  opacity: 0.5;
+}
