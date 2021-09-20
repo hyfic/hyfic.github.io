@@ -239,3 +239,9 @@ body {
 .dialogue button:hover {
   opacity: 0.5;
 }
+
+.dialogue-info {
+  color: var(--text-color);
+  font-family: 400;
+  margin-bottom: 10px;
+}
