@@ -171,3 +171,24 @@ body {
     font-size: 20px;
   }
 }
+
+/* footer section  */
+
+.footer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 130px;
+}
+
+.footer p {
+  margin-top: 20px;
+  color: var(--text-opacity-color);
+  font-size: 20px;
+  text-align: center;
+}
