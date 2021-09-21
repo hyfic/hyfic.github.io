@@ -193,6 +193,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 632px) {
+  .footer p {
+    font-size: 15px;
+  }
+}
+
 /* dialogue */
 
 .dialogue {
