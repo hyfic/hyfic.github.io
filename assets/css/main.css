@@ -29,6 +29,24 @@ body {
   color: var(--accent-color);
 }
 
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--secondary-color);
+}
+
 /* header styles  */
 
 .header {
