@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #1a202c;
-  --secondary-color: #2d3748;
-  --accent-color: #4fd1c5;
-  --text-color: #edeeee;
-  --text-opacity-color: #a0aec0;
+  --primary-color: #0e0f14;
+  --secondary-color: #171a23;
+  --accent-color: #54c3e4;
+  --text-color: #fefffb;
+  --text-opacity-color: #e7e7e7;
 }
 
 * {
