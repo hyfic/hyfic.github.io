@@ -5,7 +5,7 @@ actionBtn.addEventListener('click', (e) => {
 
   Swal.fire({
     padding: '3em',
-    background: '#2d3748',
+    background: '#171a23',
     html: `
       <div class='dialogue'>
         <h1>The <span class='accent-color'>big bang</span> is about to happen !</h1>
@@ -17,37 +17,37 @@ actionBtn.addEventListener('click', (e) => {
       </div>
     `,
     showConfirmButton: false,
-  })
+  });
 
-  // Listen & submit 
+  // Listen & submit
   document.querySelector('#dialogue-form').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    document.getElementById('dialogue-btn').innerHTML = 'Loading ...'
+    document.getElementById('dialogue-btn').innerHTML = 'Loading ...';
 
     $.ajax({
       url: 'https://script.google.com/macros/s/AKfycbzU1-QhpEauQLcPdI6fw0GmzNgopWbGMfUieYEuxG1945Eewpqq6FRMXOvg-0hTN1nt/exec',
-      data: $("#dialogue-form").serialize(),
-      method: "post",
+      data: $('#dialogue-form').serialize(),
+      method: 'post',
       success: function (response) {
         Swal.fire({
           icon: 'success',
-          background: '#2d3748',
+          background: '#171a23',
           html: `<h2 class='dialogue-info'>
           You will be notified when app get launched 🥳
           </h2>
           `,
           showConfirmButton: false,
-        })
+        });
       },
       error: function (err) {
         Swal.fire({
           icon: 'error',
-          background: '#2d3748',
+          background: '#171a23',
           html: `<h2 class='dialogue-info'>Oops, failed to submit email</h2>`,
           showConfirmButton: false,
-        })
-      }
-    })
-  })
+        });
+      },
+    });
+  });
 });
