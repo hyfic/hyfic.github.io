@@ -10,7 +10,7 @@ export const Team: React.FC = () => {
         <Flex mt={5} alignItems='center' className='cursor-pointer'>
           <Avatar
             size='lg'
-            src='https://fadhilsaheer.github.io/assets/me.722083bb.jpg'
+            src='https://raw.githubusercontent.com/fadhilsaheer/fadhilsaheer.github.io/main/public/favicon.png'
           />
           <div className='ml-3'>
             <Text className='text-2xl font-medium'>Fadhil</Text>
