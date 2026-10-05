@@ -1,0 +1,66 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+const rules = [
+  { domain: 'github.com', browser: 'Safari', color: 'blue', letter: 'S' },
+  { domain: 'notion.so', browser: 'Chrome', color: 'gold', letter: 'C' },
+  { domain: '*.company.com', browser: 'Edge', color: 'green', letter: 'E' },
+];
+---
+
+<div
+  class:list={['via-window', { compact }]}
+  role="img"
+  aria-label="Illustration of OpenVia routing rules: github.com opens in Safari, notion.so in Chrome, and company links in Edge."
+>
+  <div class="window-top">
+    <span class="traffic">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+    <strong>OpenVia</strong>
+    <span></span>
+  </div>
+  <div class="window-tabs">
+    <span class="selected">Rules</span>
+    <span>About</span>
+  </div>
+  <div class="rules">
+    <p class="rules-label">Routing Rules</p>
+    {rules.map((rule) => (
+      <div class="rule">
+        <div class="rule-options">
+          <span>
+            Any <b>⌄</b>
+          </span>
+          <span>
+            Domain <b>⌄</b>
+          </span>
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M4 5h12M8 5V3h4v2M6 5l1 12h6l1-12M9 8v6m2-6v6" />
+          </svg>
+        </div>
+        <div class="rule-route">
+          <span class="domain">{rule.domain}</span>
+          <span class="route-arrow">→</span>
+          <span class="browser-name">
+            <i class={rule.color}>{rule.letter}</i>
+            {rule.browser}
+            <b>⌄</b>
+          </span>
+        </div>
+      </div>
+    ))}
+    <span class="add-rule">⊕ &nbsp; Add Rule</span>
+    <p class="rules-label fallback-label">Fallback Behavior</p>
+    <div class="fallback">
+      <span>When no rule matches:</span>
+      <span>
+        Safari <b>⌄</b>
+      </span>
+    </div>
+  </div>
+</div>

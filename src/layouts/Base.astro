@@ -1,0 +1,46 @@
+---
+import '@fontsource/kanit/latin-600.css';
+import '../app.css';
+
+interface Props {
+  title: string;
+  description: string;
+  themeColor: string;
+  canonical: string;
+  ogTitle: string;
+  ogDescription: string;
+  ogImage: string;
+  preloadImage?: string;
+}
+const {
+  title,
+  description,
+  themeColor,
+  canonical,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  preloadImage,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content={themeColor} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} />}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

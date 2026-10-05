@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Pixeloid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/PixeloidSans.ttf') format('truetype');
+}

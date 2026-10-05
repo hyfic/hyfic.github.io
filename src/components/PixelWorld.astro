@@ -1,0 +1,94 @@
+<div class="pixel-world absolute overflow-hidden z-[0] bg-[#4895fa]" data-pixel-world>
+  <div class="world-stage absolute max-[700px]:w-[800px] max-[700px]:h-[450px]" aria-hidden="true">
+    <img src="/images/hyfic-world.webp" alt="" width="1672" height="941" />
+    <video
+      poster="/images/hyfic-world.webp"
+      muted
+      loop
+      playsinline
+      preload="none"
+      disablepictureinpicture
+    ></video>
+  </div>
+  <button
+    class="motion-control absolute right-[27px] bottom-[24px] flex items-center gap-[8px] min-h-[36px] p-[9px_12px] [border:0] rounded-[8px] bg-[#163c31ba] [color:white] cursor-pointer text-[10px] z-[4] max-[700px]:right-[18px] max-[700px]:bottom-[18px] max-[700px]:min-w-[40px] max-[700px]:min-h-[40px] max-[700px]:justify-center"
+    type="button"
+    hidden
+    aria-label="Pause landscape animation"
+    aria-pressed="false"
+  >
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M4 3h3v10H4zm5 0h3v10H9z" />
+    </svg>
+    <span>Pause scene</span>
+  </button>
+</div>
+<script>
+  const world = document.querySelector<HTMLElement>('[data-pixel-world]');
+  const video = world?.querySelector<HTMLVideoElement>('video');
+  const button = world?.querySelector<HTMLButtonElement>('.motion-control');
+  if (world && video && button) {
+    const videoEl = video;
+    const motionButton = button;
+    const icon = motionButton.querySelector('path');
+    const label = motionButton.querySelector('span');
+    const preference = matchMedia('(prefers-reduced-motion: reduce)');
+    let inView = true;
+    let userPaused = false;
+    let playing = false;
+    const pauseIcon = 'M4 3h3v10H4zm5 0h3v10H9z';
+    const playIcon = 'm5 3 8 5-8 5z';
+
+    function updateButton() {
+      motionButton.hidden = preference.matches;
+      motionButton.setAttribute(
+        'aria-label',
+        playing ? 'Pause landscape animation' : 'Play landscape animation',
+      );
+      motionButton.setAttribute('aria-pressed', String(!playing));
+      icon?.setAttribute('d', playing ? pauseIcon : playIcon);
+      if (label) label.textContent = playing ? 'Pause scene' : 'Play scene';
+    }
+    function syncPlayback() {
+      updateButton();
+      if (preference.matches || userPaused || !inView || document.hidden) {
+        videoEl.pause();
+        return;
+      }
+      if (!videoEl.src) videoEl.src = '/video/snorlax-coast.mp4';
+      void videoEl.play().catch(() => {
+        playing = false;
+        updateButton();
+      });
+    }
+    videoEl.addEventListener('canplay', () => {
+      videoEl.classList.add('ready');
+      syncPlayback();
+    });
+    videoEl.addEventListener('play', () => {
+      playing = true;
+      updateButton();
+    });
+    videoEl.addEventListener('pause', () => {
+      playing = false;
+      updateButton();
+    });
+    videoEl.addEventListener('error', () => {
+      videoEl.classList.remove('ready');
+      playing = false;
+      updateButton();
+    });
+    motionButton.addEventListener('click', () => {
+      userPaused = playing;
+      syncPlayback();
+    });
+    preference.addEventListener('change', syncPlayback);
+    document.addEventListener('visibilitychange', syncPlayback);
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      syncPlayback();
+    });
+    observer.observe(world);
+    syncPlayback();
+  }
+</script>

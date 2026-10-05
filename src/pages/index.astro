@@ -1,0 +1,204 @@
+---
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import Footer from '../components/Footer.astro';
+import PixelWorld from '../components/PixelWorld.astro';
+import OpenViaPreview from '../components/OpenViaPreview.astro';
+import '../lib/home.css';
+import '../styles/pixel-world.css';
+import '../styles/openvia-preview.css';
+---
+
+<Base
+  title="Hyfic — A home for ideas."
+  description="Useful little apps and curious experiments by Fadhil Saheer. Explore the collection, or let's bring your next idea to life."
+  themeColor="#4895fa"
+  canonical="https://hyfic.org/"
+  ogTitle="Hyfic — A home for ideas."
+  ogDescription="Useful little apps and curious experiments by Fadhil Saheer."
+  ogImage="https://hyfic.org/images/hyfic-world.webp"
+  preloadImage="/images/hyfic-world.webp"
+>
+  <div class="hyfic-home">
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header class="studio-hero">
+      <PixelWorld />
+      <div class="studio-nav">
+        <Logo />
+        <nav aria-label="Main navigation">
+          <div class="nav-group">
+            <a class="nav-link" href="#projects">
+              The projects
+            </a>
+            <span class="nav-divider" aria-hidden="true"></span>
+            <a class="nav-link nav-person" href="#about">
+              The person
+            </a>
+          </div>
+          <a class="home-button nav-book" href="https://cal.com/fadhilsaheer">
+            Let’s talk
+          </a>
+        </nav>
+      </div>
+      <div class="studio-intro">
+        <h1>
+          A home for ideas.
+          <br />
+          Built into real things.
+        </h1>
+        <p>
+          Useful little apps and curious experiments by Fadhil Saheer.
+          <br class="desktop-only" /> Made with care, a little imagination, and
+          a love for building.
+        </p>
+        <div class="studio-actions">
+          <a class="home-button" href="#projects">
+            Explore the projects
+          </a>
+          <a
+            class="home-button translucent"
+            href="https://cal.com/fadhilsaheer"
+          >
+            Build something with me
+          </a>
+        </div>
+      </div>
+      <p class="scene-caption">A curious mind. A sleepy cofounder.</p>
+      <svg
+        class="pixel-edge"
+        viewBox="0 0 480 8"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path d="M0 5h8V3h4v3h12V4h8v4h8V5h4v2h16V3h8v4h12V5h4v3h20V6h12V3h4v4h12V5h8v3h16V4h8v3h12V5h8v3h16V5h4v2h12V3h8v4h12V5h4v3h20V6h12V4h4v3h16V5h8v3h12V4h8v3h16V5h8v3h8V4h4v3h16V5h8v3h12V5h8v2h8V3h8v4h16V5h8v3h12V4h8v3h8V5h8v3h8V4h8v4h16V5h8v3h8V4h8v4H0z" />
+      </svg>
+    </header>
+
+    <main id="main">
+      <section
+        class="studio-projects home-wrap"
+        id="projects"
+        aria-labelledby="projects-heading"
+      >
+        <div class="collection-heading">
+          <h2 id="projects-heading">
+            Little things for
+            <br />
+            everyday life.
+          </h2>
+          <p>
+            Sometimes an idea turns into something useful.
+            <br />
+            These are a few of mine.
+          </p>
+        </div>
+        <div class="collection-grid">
+          <a class="collection-item" href="/manavalan-finance/">
+            <div class="collection-art money-preview">
+              <span class="preview-label">A little more sorted.</span>
+              <div class="collection-phone">
+                <img
+                  src="/manavalan-finance/assets/overview.png"
+                  width="390"
+                  height="844"
+                  alt="Manavalan Finance’s wallet overview with illustrative records"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="collection-name">
+              <img
+                src="/manavalan-finance/assets/app-icon.svg"
+                width="28"
+                height="28"
+                alt=""
+              />
+              <h3>Manavalan Finance</h3>
+            </div>
+            <p>Make sense of your everyday money.</p>
+            <span class="project-platform">Personal finance · Android</span>
+          </a>
+          <a class="collection-item" href="/log-horizon/">
+            <div class="collection-art diary-preview">
+              <span class="preview-label">A little room to think.</span>
+              <div class="diary-window">
+                <div class="diary-window-top">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+                <img
+                  src="/images/log-horizon-preview.jpg"
+                  width="1280"
+                  height="720"
+                  alt="Log Horizon’s writing view, with a sample journal entry"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="collection-name">
+              <img
+                src="/images/log-horizon.png"
+                width="28"
+                height="28"
+                alt=""
+              />
+              <h3>Log Horizon</h3>
+            </div>
+            <p>A quiet place for what’s on your mind.</p>
+            <span class="project-platform">Journaling · Desktop</span>
+          </a>
+          <a class="collection-item" href="/openvia/">
+            <div class="collection-art browser-preview">
+              <span class="preview-label">Everything in its place.</span>
+              <div class="via-thumbnail">
+                <OpenViaPreview compact />
+              </div>
+            </div>
+            <div class="collection-name">
+              <img src="/images/openvia.png" width="28" height="28" alt="" />
+              <h3>OpenVia</h3>
+            </div>
+            <p>Your links, in the right browser.</p>
+            <span class="project-platform">A little utility · macOS</span>
+          </a>
+        </div>
+        <p class="collection-postscript">
+          Always making room for the next idea.
+        </p>
+      </section>
+
+      <section
+        class="maker-section home-wrap"
+        id="about"
+        aria-labelledby="maker-heading"
+      >
+        <div class="maker-title">
+          <h2 id="maker-heading">
+            One person.
+            <br />
+            Plenty of possibilities.
+          </h2>
+        </div>
+        <div class="maker-copy">
+          <p>
+            I’m <a href="https://fadhilsaheer.me">Fadhil</a>, a design and
+            fullstack engineer from Kerala. Hyfic is where my side projects find
+            a home. A mix of things I needed, things I wondered about, and
+            things I just wanted to make.
+          </p>
+          <p>
+            I also help people bring their own ideas to life. A thoughtful
+            website, a useful app, or something that doesn’t quite exist yet.
+          </p>
+          <a class="maker-link" href="https://fadhilsaheer.me">
+            More about me
+          </a>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</Base>

@@ -1,0 +1,405 @@
+<section
+  class="features section"
+  id="features"
+  aria-labelledby="features-title"
+>
+  <div class="section-intro">
+    <h2 id="features-title">The essentials, all here.</h2>
+  </div>
+  <div class="feature-grid">
+    <article class="feature spending">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Track spending illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <rect
+            x="22"
+            y="35"
+            width="174"
+            height="90"
+            rx="10"
+            fill="var(--app-base)"
+          />
+          <rect x="32" y="46" width="60" height="14" rx="7" fill="#e9e9e9" />
+          <text x="41" y="56" fill="#777" font-size="8">
+            Transactions
+          </text>
+          <g class="expense-existing">
+            <text x="36" y="78" fill="#555" font-size="9">
+              Coffee
+            </text>
+            <text
+              x="180"
+              y="78"
+              text-anchor="end"
+              fill="var(--app-red)"
+              font-size="9"
+            >
+              −₹120
+            </text>
+            <path d="M35 87h148" stroke="#e9e9e9" />
+          </g>
+          <g class="expense-new">
+            <text x="36" y="105" fill="#555" font-size="9">
+              Salary
+            </text>
+            <text
+              x="180"
+              y="105"
+              text-anchor="end"
+              fill="var(--app-green)"
+              font-size="9"
+            >
+              +₹35,000
+            </text>
+          </g>
+          <g class="expense-incoming">
+            <rect
+              x="30"
+              y="91"
+              width="158"
+              height="24"
+              rx="5"
+              fill="var(--app-pink-wash)"
+            />
+            <text x="36" y="106" fill="var(--ink)" font-size="9">
+              Groceries
+            </text>
+            <text
+              x="180"
+              y="106"
+              text-anchor="end"
+              fill="var(--app-red)"
+              font-size="9"
+            >
+              −₹480
+            </text>
+          </g>
+          <g class="expense-plus">
+            <circle cx="181" cy="48" r="8" fill="#242424" />
+            <path d="M178 48h6m-3-3v6" stroke="white" stroke-width="1.3" />
+          </g>
+        </svg>
+      </button>
+      <h3>Track spending</h3>
+      <p>Know where your money goes.</p>
+    </article>
+    <article class="feature wallets">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Separate wallets illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <g class="wallet-rear">
+            <rect x="39" y="33" width="110" height="69" rx="8" fill="#eee" />
+            <rect x="46" y="40" width="96" height="55" rx="5" fill="#e0e0e0" />
+            <path d="M58 55h34m-34 13h59" stroke="#bbb" stroke-width="3" />
+          </g>
+          <g class="wallet-forward">
+            <rect x="81" y="60" width="110" height="69" rx="8" fill="#fafafa" />
+            <rect
+              x="88"
+              y="67"
+              width="96"
+              height="55"
+              rx="5"
+              fill="url(#quiet-wallet)"
+            />
+            <text x="99" y="82" fill="var(--muted)" font-size="8">
+              Personal
+            </text>
+            <text
+              x="99"
+              y="106"
+              fill="var(--ink)"
+              font-size="15"
+              font-weight="500"
+            >
+              ₹31,649
+            </text>
+          </g>
+        </svg>
+      </button>
+      <h3>Separate wallets</h3>
+      <p>A space for every balance.</p>
+    </article>
+    <article class="feature lending">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Lent and borrowed illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <rect
+            x="27"
+            y="39"
+            width="166"
+            height="85"
+            rx="9"
+            fill="var(--app-base)"
+          />
+          <g class="loan-outstanding">
+            <circle cx="45" cy="57" r="7" fill="#e5e5e5" />
+            <text x="58" y="60" fill="#737373" font-size="9">
+              Lent to Arjun
+            </text>
+            <text x="40" y="85" fill="#292929" font-size="18" font-weight="500">
+              ₹2,000
+            </text>
+            <path d="M40 99h138" stroke="#e2e2e2" stroke-width="4" />
+            <path
+              class="loan-progress"
+              d="M40 99h104"
+              stroke="var(--app-green)"
+              stroke-width="4"
+            />
+            <text x="40" y="114" fill="#888" font-size="7">
+              ₹1,500 returned
+            </text>
+            <text x="179" y="114" text-anchor="end" fill="#888" font-size="7">
+              ₹500 left
+            </text>
+          </g>
+          <g class="loan-settled">
+            <circle cx="65" cy="81" r="18" fill="#e7f1ec" />
+            <path
+              d="m57 81 6 6 11-13"
+              stroke="var(--app-green)"
+              stroke-width="2.5"
+            />
+            <text
+              x="93"
+              y="78"
+              fill="var(--ink)"
+              font-size="13"
+              font-weight="500"
+            >
+              All settled
+            </text>
+            <text x="93" y="94" fill="var(--muted)" font-size="8">
+              ₹2,000 returned
+            </text>
+          </g>
+        </svg>
+      </button>
+      <h3>Lent & borrowed</h3>
+      <p>Keep track of who owes what.</p>
+    </article>
+    <article class="feature private">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Everything local illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <g transform="translate(27 22) scale(.75)">
+            <path
+              d="M48 53q0-8 8-8h41l10 10h57q8 0 8 8v63q0 8-8 8H56q-8 0-8-8z"
+              fill="url(#scene-folder-back)"
+            />
+            <g class="privacy-docs">
+              <rect
+                x="63"
+                y="58"
+                width="51"
+                height="66"
+                rx="4"
+                fill="var(--app-base)"
+              />
+              <rect
+                x="72"
+                y="68"
+                width="32"
+                height="15"
+                rx="3"
+                fill="var(--app-violet-wash)"
+              />
+              <path d="M73 92h29m-29 8h21" stroke="#cecece" stroke-width="2" />
+              <rect x="103" y="68" width="50" height="59" rx="4" fill="white" />
+              <path d="M114 80h27m-27 8h18" stroke="#cecece" stroke-width="2" />
+            </g>
+            <g class="privacy-cover">
+              <path
+                d="M48 78h124v48q0 8-8 8H56q-8 0-8-8z"
+                fill="url(#scene-folder-front)"
+              />
+              <path d="M49 79h121" stroke="var(--app-wash-end)" />
+            </g>
+          </g>
+          <text
+            x="110"
+            y="142"
+            text-anchor="middle"
+            fill="#737373"
+            font-size="8"
+          >
+            Stored on your device
+          </text>
+        </svg>
+      </button>
+      <h3>Everything local</h3>
+      <p>Your records stay on your device.</p>
+    </article>
+    <article class="feature groups">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Group ledgers illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <rect
+            x="27"
+            y="32"
+            width="166"
+            height="96"
+            rx="9"
+            fill="var(--app-base)"
+          />
+          <text x="39" y="50" fill="#737373" font-size="9">
+            Weekend trip
+          </text>
+          <g class="group-members">
+            <circle cx="164" cy="46" r="5" fill="#d5d5d5" />
+            <circle
+              cx="172"
+              cy="46"
+              r="5"
+              fill="#aaa"
+              stroke="var(--app-base)"
+              stroke-width="1.5"
+            />
+          </g>
+          <g class="group-first">
+            <rect x="38" y="62" width="143" height="17" rx="4" fill="#ececec" />
+            <path d="M47 70h51m53 0h21" stroke="#bdbdbd" stroke-width="3" />
+          </g>
+          <g class="group-entry">
+            <rect
+              x="38"
+              y="84"
+              width="143"
+              height="17"
+              rx="4"
+              fill="var(--app-violet-wash)"
+            />
+            <path
+              d="M47 92h72m32 0h21"
+              stroke="var(--app-lavender)"
+              stroke-width="3"
+            />
+          </g>
+          <g class="group-last">
+            <path d="M47 114h41m63 0h21" stroke="#d1d1d1" stroke-width="3" />
+          </g>
+        </svg>
+      </button>
+      <h3>Group ledgers</h3>
+      <p>Keep trips and projects organized.</p>
+    </article>
+    <article class="feature exports">
+      <button
+        class="feature-visual"
+        type="button"
+        aria-label="Animate Easy exports illustration"
+      >
+        <svg
+          aria-hidden="true"
+          class="feature-illustration"
+          viewBox="0 0 220 160"
+        >
+          <g class="export-left">
+            <rect
+              x="38"
+              y="43"
+              width="64"
+              height="87"
+              rx="8"
+              fill="var(--app-base)"
+            />
+            <rect
+              x="48"
+              y="56"
+              width="28"
+              height="14"
+              rx="4"
+              fill="var(--app-surface)"
+            />
+            <text
+              x="54"
+              y="66"
+              fill="var(--muted)"
+              font-size="8"
+              font-weight="500"
+            >
+              CSV
+            </text>
+            <path
+              d="M49 82h42m-42 10h42m-42 10h42M61 82v20m15-20v20"
+              stroke="#d4d4d4"
+              stroke-width="1.5"
+            />
+            <path d="M49 115h25" stroke="#dedede" stroke-width="3" />
+          </g>
+          <g class="export-right">
+            <rect
+              x="113"
+              y="30"
+              width="68"
+              height="98"
+              rx="8"
+              fill="var(--app-base)"
+            />
+            <rect
+              x="123"
+              y="43"
+              width="35"
+              height="14"
+              rx="4"
+              fill="var(--app-violet-wash)"
+            />
+            <text
+              x="129"
+              y="53"
+              fill="var(--purple)"
+              font-size="8"
+              font-weight="500"
+            >
+              JSON
+            </text>
+            <path
+              d="M137 72q-5 0-5 5v5q0 5-4 5 4 0 4 5v5q0 5 5 5m23-30q5 0 5 5v5q0 5 4 5-4 0-4 5v5q0 5-5 5"
+              stroke="#c3c3c3"
+              stroke-width="2"
+            />
+            <path d="M126 115h31" stroke="#dedede" stroke-width="3" />
+          </g>
+        </svg>
+      </button>
+      <h3>Easy exports</h3>
+      <p>CSV exports. Full JSON backups.</p>
+    </article>
+  </div>
+</section>

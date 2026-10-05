@@ -1,0 +1,116 @@
+---
+import Logo from './Logo.astro';
+const year = new Date().getFullYear();
+const pixels = Array.from({ length: 200 }, (_, i) => {
+  const noise = Math.abs(Math.sin(i * 127.1 + 311.7) * 43758.5453) % 1;
+  return {
+    x: i * 6,
+    top: 24 + Math.floor(noise * 8) * 3,
+    speck: noise > 0.8,
+  };
+});
+---
+
+<footer class="home-footer" id="contact">
+  <div class="footer-main home-wrap">
+    <div class="footer-copy">
+      <Logo />
+      <h2>
+        What have you
+        <br />
+        been dreaming up?
+      </h2>
+      <p>Let’s give that idea a place in the world.</p>
+      <div class="footer-links">
+        <nav aria-label="Projects">
+          <h3>The projects</h3>
+          <a href="/manavalan-finance/">Manavalan Finance</a>
+          <a href="/log-horizon/">Log Horizon</a>
+          <a href="/openvia/">OpenVia</a>
+        </nav>
+        <nav aria-label="Get in touch">
+          <h3>Say hello</h3>
+          <a href="mailto:fadhil@hyfic.org">fadhil@hyfic.org</a>
+          <a href="https://fadhilsaheer.me">Fadhil Saheer</a>
+          <a href="https://cal.com/fadhilsaheer">Book a call</a>
+        </nav>
+      </div>
+      <p class="footer-copyright">
+        © {year} Hyfic. Small things, made with care.
+      </p>
+    </div>
+    <div class="footer-postcard">
+      <div class="postcard-scene">
+        <img
+          src="/images/hyfic-world.webp"
+          alt=""
+          width="1672"
+          height="941"
+          loading="lazy"
+        />
+        <div class="postcard-note">
+          <p>
+            From a little idea
+            <br />
+            to something real.
+          </p>
+          <a class="home-button" href="https://cal.com/fadhilsaheer">
+            Let’s build it together
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-ground">
+    <svg
+      class="pixel-ground"
+      viewBox="0 0 1200 90"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      shape-rendering="crispEdges"
+    >
+      <path d="M0 48h1200v42H0z" fill="var(--ground)" />
+      {pixels.map((pixel) => (
+        <>
+          <rect
+            x={pixel.x}
+            y={pixel.top}
+            width="6"
+            height={52 - pixel.top}
+            fill="var(--ground)"
+          />
+          {pixel.speck && (
+            <>
+              <path
+                d={`M${pixel.x} ${pixel.top - 12}h6v6h-6zM${pixel.x + 6} ${pixel.top - 18}h6v6h-6z`}
+                fill="var(--ground-light)"
+              />
+              <rect
+                x={pixel.x}
+                y={pixel.top + 14}
+                width="12"
+                height="6"
+                fill="var(--ground-shade)"
+              />
+            </>
+          )}
+        </>
+      ))}
+    </svg>
+    <p>
+      Made with{' '}
+      <svg
+        viewBox="0 0 9 8"
+        aria-label="love"
+        role="img"
+        shape-rendering="crispEdges"
+      >
+        <path
+          d="M1 0h2v1h3V0h2v1h1v3H8v1H7v1H6v1H5v1H4V7H3V6H2V5H1V4H0V1h1zm0 1v3h1v1h1v1h1v1h1V6h1V5h1V4h1V1H6v1H3V1z"
+          fill="currentColor"
+        />
+      </svg>
+      by <a href="https://fadhilsaheer.me">Fadhil Saheer</a>
+    </p>
+  </div>
+</footer>

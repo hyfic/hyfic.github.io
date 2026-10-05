@@ -1,0 +1,63 @@
+---
+interface Props {
+  name: string;
+}
+const { name } = Astro.props;
+---
+
+<footer class="app-footer">
+  <span>
+    {name} · Made by <a href="https://fadhilsaheer.me">Fadhil Saheer</a>
+  </span>
+  <a class="back-link" href="/" aria-label="More projects from Hyfic">
+    More little things from{' '}
+    <span class="wordmark">
+      hyf
+      <svg viewBox="0 0 18 32" aria-hidden="true">
+        <path d="M11 1 1 18h7L5 31 18 12h-8z" />
+      </svg>
+      c
+    </span>
+  </a>
+</footer>
+<style>
+  .app-footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .app-footer a:hover {
+    text-decoration: underline;
+  }
+  .back-link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .wordmark {
+    display: flex;
+    align-items: center;
+    font:
+      600 25px 'Kanit',
+      sans-serif;
+    color: var(--ink);
+  }
+  svg {
+    width: 11px;
+    height: 23px;
+    fill: currentColor;
+  }
+  @media (max-width: 600px) {
+    .app-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+</style>

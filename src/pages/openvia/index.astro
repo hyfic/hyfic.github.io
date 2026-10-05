@@ -1,0 +1,226 @@
+---
+import Base from '../../layouts/Base.astro';
+import Arrow from '../../components/Arrow.astro';
+import AppFooter from '../../components/AppFooter.astro';
+import OpenViaPreview from '../../components/OpenViaPreview.astro';
+import '../../styles/openvia-preview.css';
+import '../../styles/openvia.css';
+const releaseUrl =
+  'https://github.com/hyfic/openvia/releases/download/v1.0.0/OpenVia.dmg';
+const examples = [
+  { url: 'github.com/hyfic', browser: 'Safari', rule: 'github.com' },
+  { url: 'notion.so/my-workspace', browser: 'Chrome', rule: 'notion.so' },
+  { url: 'docs.company.com', browser: 'Edge', rule: '*.company.com' },
+];
+const faq = [
+  [
+    'What does OpenVia do?',
+    'OpenVia routes links to the browser you choose. Set it as your default browser, add a few rules, and links opened from other apps go to the matching browser.',
+  ],
+  [
+    'How do the rules work?',
+    'Match an exact domain, use wildcards for URLs or subdomains, or write a regular expression. You can also match HTTP or HTTPS links. Rules are checked from top to bottom, so put specific rules first.',
+  ],
+  [
+    'What if a link doesn’t match?',
+    'Choose a fallback browser for everything else. OpenVia can use the system default, with Safari as a safe fallback when OpenVia itself is the default.',
+  ],
+  [
+    'Does anything leave my Mac?',
+    'OpenVia stores its routing rules locally on your Mac. It passes each link to your chosen browser, which then opens the website as usual.',
+  ],
+  [
+    'Where can I get it?',
+    'Download OpenVia for macOS from the v1.0.0 release on GitHub.',
+  ],
+];
+---
+
+<Base
+  title="OpenVia — Every link, in the right browser. | Hyfic"
+  description="A little Mac utility that routes links to the right browser. Set your rules once; OpenVia handles the rest."
+  themeColor="#e8f0fb"
+  canonical="https://hyfic.org/openvia/"
+  ogTitle="OpenVia — Every link, in the right browser."
+  ogDescription="A small macOS utility. Your links, your rules. A Hyfic project."
+  ogImage="https://hyfic.org/images/openvia.png"
+>
+  <a class="skip" href="#main">
+    Skip to content
+  </a>
+  <div class="app-page via-page">
+    <header class="via-hero">
+      <div class="app-nav">
+        <a class="app-brand" href="/openvia/">
+          <img src="/images/openvia.png" alt="" width="32" height="32" />
+          OpenVia
+        </a>
+        <nav aria-label="OpenVia navigation">
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a class="nav-release" href="#release">
+            Get the app
+          </a>
+        </nav>
+      </div>
+      <div class="app-intro">
+        <h1>
+          Every link.
+          <br />
+          The right browser.
+        </h1>
+        <p>
+          Work in one. Everything else in another.
+          <br />
+          OpenVia sends your links where they belong.
+        </p>
+        <a class="button via-button" href="#how-it-works">
+          See how it works <Arrow />
+        </a>
+        <span class="release-note">A little utility, made for your Mac.</span>
+      </div>
+      <div class="via-preview">
+        <OpenViaPreview />
+      </div>
+      <p class="preview-caption">
+        An illustrated preview of the app, with example rules.
+      </p>
+    </header>
+    <main id="main">
+      <section class="routing-section" id="how-it-works">
+        <div class="routing-copy">
+          <h2>
+            Your links.
+            <br />
+            Your rules.
+          </h2>
+          <p>
+            Set OpenVia as your default browser. Choose where your favourite
+            sites should open. Then just click a link.
+          </p>
+          <span>
+            Try an example <Arrow />
+          </span>
+        </div>
+        <div class="routing-demo">
+          <div class="example-buttons" role="group" aria-label="Example links">
+            {examples.map((example, i) => (
+              <button
+                class={i === 0 ? 'active' : ''}
+                data-example={i}
+                aria-pressed={i === 0}
+              >
+                {example.rule}
+              </button>
+            ))}
+          </div>
+          <div class="link-path" aria-live="polite">
+            <span class="example-url">{examples[0].url}</span>
+            <div class="route-line">
+              <span></span>
+              <img
+                src="/images/openvia.png"
+                alt="OpenVia routes the link"
+                width="44"
+                height="44"
+              />
+              <span></span>
+            </div>
+            <p>
+              Opens in <strong>{examples[0].browser}</strong>
+            </p>
+          </div>
+          <small>Interactive example. No browser is launched.</small>
+        </div>
+      </section>
+      <section class="app-features" id="features">
+        <h2>A small app. One less little hassle.</h2>
+        <div class="feature-columns">
+          <article>
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M5 7h18M5 14h18M5 21h18M10 4v6m9 1v6m-8 1v6" />
+            </svg>
+            <h3>As simple or specific as you like.</h3>
+            <p>
+              Use domains for everyday links. Wildcards and regular expressions
+              handle the more particular ones.
+            </p>
+          </article>
+          <article>
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M5 8h13a5 5 0 0 1 0 10H7m4-4-4 4 4 4" />
+            </svg>
+            <h3>There’s always a way through.</h3>
+            <p>
+              Pick a fallback browser for links that don’t match. Nothing gets
+              stuck between your rules.
+            </p>
+          </article>
+          <article>
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <rect x="4" y="5" width="20" height="15" rx="2" />
+              <path d="M10 24h8m-4-4v4m-4-12 3 3 5-5" />
+            </svg>
+            <h3>Right at home on your Mac.</h3>
+            <p>
+              A native macOS utility with rules stored locally. Set it up once,
+              and let it get out of your way.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="app-faq" id="faq">
+        <h2>
+          A few good
+          <br />
+          questions.
+        </h2>
+        <div class="faq-list">
+          {faq.map(([question, answer]) => (
+            <details>
+              <summary>{question}</summary>
+              <p>{answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+      <section class="app-closing" id="release">
+        <img src="/images/openvia.png" alt="" width="54" height="54" />
+        <h2>One less thing to think about.</h2>
+        <p>Click a link. Carry on.</p>
+        <a class="button via-button" href={releaseUrl}>
+          Download for macOS <Arrow diagonal />
+        </a>
+        <small>OpenVia v1.0.0 · DMG from GitHub.</small>
+      </section>
+    </main>
+    <AppFooter name="OpenVia" />
+  </div>
+
+  <script>
+    const examples = [
+      { url: 'github.com/hyfic', browser: 'Safari' },
+      { url: 'notion.so/my-workspace', browser: 'Chrome' },
+      { url: 'docs.company.com', browser: 'Edge' },
+    ];
+    const demo = document.querySelector<HTMLElement>('.routing-demo');
+    demo
+      ?.querySelectorAll<HTMLButtonElement>('[data-example]')
+      .forEach((button) => {
+        button.addEventListener('click', () => {
+          const index = Number(button.dataset.example);
+          demo
+            .querySelectorAll<HTMLButtonElement>('[data-example]')
+            .forEach((item) => {
+              const active = item === button;
+              item.classList.toggle('active', active);
+              item.setAttribute('aria-pressed', String(active));
+            });
+          const url = demo.querySelector<HTMLElement>('.example-url');
+          const browser = demo.querySelector<HTMLElement>('.link-path strong');
+          if (url) url.textContent = examples[index].url;
+          if (browser) browser.textContent = examples[index].browser;
+        });
+      });
+  </script>
+</Base>

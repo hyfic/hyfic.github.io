@@ -1,0 +1,49 @@
+---
+import Symbols from '../../components/manavalan/Symbols.astro';
+import Hero from '../../components/manavalan/Hero.astro';
+import Features from '../../components/manavalan/Features.astro';
+import Faq from '../../components/manavalan/Faq.astro';
+import Footer from '../../components/manavalan/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dac6ed" />
+    <meta
+      name="description"
+      content="A little clarity for your everyday money. Track spending, manage wallets, and keep lending in check with Manvalan Finance. Private, offline, and yours."
+    />
+    <meta
+      property="og:title"
+      content="Manvalan Finance — Make sense of your money."
+    />
+    <meta
+      property="og:description"
+      content="Your everyday money, a little more sorted. Private, offline finance tracking."
+    />
+    <meta property="og:type" content="website" />
+    <title>Manvalan Finance — Make sense of your money.</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/manavalan-finance/assets/app-icon.svg"
+    />
+    <link rel="stylesheet" href="/manavalan-finance/style.css" />
+  </head>
+  <body>
+    <Symbols />
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <main id="main">
+      <Hero />
+      <Features />
+      <Faq />
+    </main>
+    <Footer />
+    <script src="/manavalan-finance/script.js" defer></script>
+  </body>
+</html>

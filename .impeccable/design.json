@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T07:40:50.855693+00:00",
+  "title": "Design System: Hyfic",
+  "extensions": {
+    "colorMeta": {
+      "coastal-sky": {
+        "displayName": "Coastal Sky",
+        "role": "secondary",
+        "canonical": "#4895fa"
+      },
+      "ink": {
+        "displayName": "Ink",
+        "role": "neutral",
+        "canonical": "#24312d"
+      },
+      "muted": {
+        "displayName": "Muted",
+        "role": "neutral",
+        "canonical": "#65736c"
+      },
+      "paper": {
+        "displayName": "Paper",
+        "role": "neutral",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.876)",
+          "oklch(26% 0.00000 89.876)",
+          "oklch(38% 0.00000 89.876)",
+          "oklch(49% 0.00000 89.876)",
+          "oklch(61% 0.00000 89.876)",
+          "oklch(72% 0.00000 89.876)",
+          "oklch(84% 0.00000 89.876)",
+          "oklch(95% 0.00000 89.876)"
+        ]
+      },
+      "line": {
+        "displayName": "Line",
+        "role": "neutral",
+        "canonical": "#e3e9e5"
+      },
+      "finance-preview": {
+        "displayName": "Finance Preview",
+        "role": "neutral",
+        "canonical": "#f0e9f6",
+        "tonalRamp": [
+          "oklch(15% 0.01882 309.792)",
+          "oklch(26% 0.01882 309.792)",
+          "oklch(38% 0.01882 309.792)",
+          "oklch(49% 0.01882 309.792)",
+          "oklch(61% 0.01882 309.792)",
+          "oklch(72% 0.01882 309.792)",
+          "oklch(84% 0.01882 309.792)",
+          "oklch(95% 0.01882 309.792)"
+        ]
+      },
+      "journal-preview": {
+        "displayName": "Journal Preview",
+        "role": "neutral",
+        "canonical": "#eff0f0",
+        "tonalRamp": [
+          "oklch(15% 0.00107 197.138)",
+          "oklch(26% 0.00107 197.138)",
+          "oklch(38% 0.00107 197.138)",
+          "oklch(49% 0.00107 197.138)",
+          "oklch(61% 0.00107 197.138)",
+          "oklch(72% 0.00107 197.138)",
+          "oklch(84% 0.00107 197.138)",
+          "oklch(95% 0.00107 197.138)"
+        ]
+      },
+      "via-preview": {
+        "displayName": "Via Preview",
+        "role": "neutral",
+        "canonical": "#e7effb",
+        "tonalRamp": [
+          "oklch(15% 0.01831 258.353)",
+          "oklch(26% 0.01831 258.353)",
+          "oklch(38% 0.01831 258.353)",
+          "oklch(49% 0.01831 258.353)",
+          "oklch(61% 0.01831 258.353)",
+          "oklch(72% 0.01831 258.353)",
+          "oklch(84% 0.01831 258.353)",
+          "oklch(95% 0.01831 258.353)"
+        ]
+      },
+      "journal-action": {
+        "displayName": "Journal Action",
+        "role": "secondary",
+        "canonical": "oklch(38.714% 0.03285 143.288)",
+        "tonalRamp": [
+          "oklch(15% 0.03285 143.288)",
+          "oklch(26% 0.03285 143.288)",
+          "oklch(38% 0.03285 143.288)",
+          "oklch(49% 0.03285 143.288)",
+          "oklch(61% 0.03285 143.288)",
+          "oklch(72% 0.03285 143.288)",
+          "oklch(84% 0.03285 143.288)",
+          "oklch(95% 0.03285 143.288)"
+        ]
+      },
+      "journal-paper": {
+        "displayName": "Journal Paper",
+        "role": "neutral",
+        "canonical": "oklch(98.650% 0.00408 121.559)",
+        "tonalRamp": [
+          "oklch(15% 0.00408 121.559)",
+          "oklch(26% 0.00408 121.559)",
+          "oklch(38% 0.00408 121.559)",
+          "oklch(49% 0.00408 121.559)",
+          "oklch(61% 0.00408 121.559)",
+          "oklch(72% 0.00408 121.559)",
+          "oklch(84% 0.00408 121.559)",
+          "oklch(95% 0.00408 121.559)"
+        ]
+      },
+      "journal-hero": {
+        "displayName": "Journal Hero",
+        "role": "neutral",
+        "canonical": "oklch(93.934% 0.01085 118.029)",
+        "tonalRamp": [
+          "oklch(15% 0.01085 118.029)",
+          "oklch(26% 0.01085 118.029)",
+          "oklch(38% 0.01085 118.029)",
+          "oklch(49% 0.01085 118.029)",
+          "oklch(61% 0.01085 118.029)",
+          "oklch(72% 0.01085 118.029)",
+          "oklch(84% 0.01085 118.029)",
+          "oklch(95% 0.01085 118.029)"
+        ]
+      },
+      "via-action": {
+        "displayName": "Via Action",
+        "role": "secondary",
+        "canonical": "oklch(48.688% 0.11786 257.653)",
+        "tonalRamp": [
+          "oklch(15% 0.11786 257.653)",
+          "oklch(26% 0.11786 257.653)",
+          "oklch(38% 0.11786 257.653)",
+          "oklch(49% 0.11786 257.653)",
+          "oklch(61% 0.11786 257.653)",
+          "oklch(72% 0.11786 257.653)",
+          "oklch(84% 0.11786 257.653)",
+          "oklch(95% 0.11786 257.653)"
+        ]
+      },
+      "via-hero": {
+        "displayName": "Via Hero",
+        "role": "neutral",
+        "canonical": "oklch(95.232% 0.01712 256.281)",
+        "tonalRamp": [
+          "oklch(15% 0.01712 256.281)",
+          "oklch(26% 0.01712 256.281)",
+          "oklch(38% 0.01712 256.281)",
+          "oklch(49% 0.01712 256.281)",
+          "oklch(61% 0.01712 256.281)",
+          "oklch(72% 0.01712 256.281)",
+          "oklch(84% 0.01712 256.281)",
+          "oklch(95% 0.01712 256.281)"
+        ]
+      },
+      "finance-purple": {
+        "displayName": "Finance Purple",
+        "role": "secondary",
+        "canonical": "oklch(52.516% 0.13831 300.380)",
+        "tonalRamp": [
+          "oklch(15% 0.13831 300.380)",
+          "oklch(26% 0.13831 300.380)",
+          "oklch(38% 0.13831 300.380)",
+          "oklch(49% 0.13831 300.380)",
+          "oklch(61% 0.13831 300.380)",
+          "oklch(72% 0.13831 300.380)",
+          "oklch(84% 0.13831 300.380)",
+          "oklch(95% 0.13831 300.380)"
+        ]
+      },
+      "finance-lavender": {
+        "displayName": "Finance Lavender",
+        "role": "secondary",
+        "canonical": "oklch(72.625% 0.13535 299.363)",
+        "tonalRamp": [
+          "oklch(15% 0.13535 299.363)",
+          "oklch(26% 0.13535 299.363)",
+          "oklch(38% 0.13535 299.363)",
+          "oklch(49% 0.13535 299.363)",
+          "oklch(61% 0.13535 299.363)",
+          "oklch(72% 0.13535 299.363)",
+          "oklch(84% 0.13535 299.363)",
+          "oklch(95% 0.13535 299.363)"
+        ]
+      },
+      "finance-blush": {
+        "displayName": "Finance Blush",
+        "role": "secondary",
+        "canonical": "oklch(79.886% 0.12015 347.232)",
+        "tonalRamp": [
+          "oklch(15% 0.12015 347.232)",
+          "oklch(26% 0.12015 347.232)",
+          "oklch(38% 0.12015 347.232)",
+          "oklch(49% 0.12015 347.232)",
+          "oklch(61% 0.12015 347.232)",
+          "oklch(72% 0.12015 347.232)",
+          "oklch(84% 0.12015 347.232)",
+          "oklch(95% 0.12015 347.232)"
+        ]
+      },
+      "button-paper": {
+        "displayName": "Button Paper",
+        "role": "neutral",
+        "canonical": "#fafbf9"
+      },
+      "teal": {
+        "displayName": "Teal",
+        "role": "primary",
+        "canonical": "#127862"
+      },
+      "teal-deep": {
+        "displayName": "Teal Deep",
+        "role": "secondary",
+        "canonical": "#0d6250"
+      },
+      "teal-soft": {
+        "displayName": "Teal Soft",
+        "role": "secondary",
+        "canonical": "#edf6f1"
+      },
+      "teal-border": {
+        "displayName": "Teal Border",
+        "role": "secondary",
+        "canonical": "#cbe1d8"
+      },
+      "pixel-ground": {
+        "displayName": "Pixel Ground",
+        "role": "secondary",
+        "canonical": "#86c8af"
+      },
+      "footer-paper": {
+        "displayName": "Footer Paper",
+        "role": "neutral",
+        "canonical": "#f8faf7"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Main hero",
+        "purpose": "Pixeloid Regular homepage hero at whole-pixel sizes; mobile scale preserves space for the scene."
+      },
+      "journal-display": {
+        "displayName": "Quiet journal serif",
+        "purpose": "Log Horizon hero and related serif headings."
+      },
+      "wordmark": {
+        "displayName": "Homepage wordmark",
+        "purpose": "Plain lowercase Pixeloid Regular lettering, inheriting the surrounding text color. App attribution retains Kanit."
+      }
+    },
+    "shadows": [
+      {
+        "name": "journal-preview",
+        "value": "0 18px 45px #32382a19",
+        "purpose": "Large diary screenshot."
+      },
+      {
+        "name": "mac-window",
+        "value": "0 22px 65px #233a6326",
+        "purpose": "Illustrated OpenVia window."
+      },
+      {
+        "name": "finance-phone",
+        "value": "0 18px 42px #51415f26",
+        "purpose": "Preserved finance phone."
+      },
+      {
+        "name": "selected-utility-tab",
+        "value": "0 2px 6px #2c4d7112",
+        "purpose": "Routing example selected segment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "finance-scene-easing",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Existing finance illustration transitions."
+      },
+      {
+        "name": "homepage-button-state",
+        "value": "background 0.18s, box-shadow 0.18s",
+        "purpose": "Surface light sweep and 1px lift; press compression; disabled for reduced motion."
+      },
+      {
+        "name": "homepage-preview-state",
+        "value": "transform 0.3s",
+        "purpose": "Phone and diary gently straighten; utility preview rises. Disabled for reduced motion."
+      },
+      {
+        "name": "pixel-scene",
+        "value": "2560 × 1440 video; 24fps; seamless eight-second loop",
+        "purpose": "Moving clouds, sea, canopy, meadow, birds, sleeping Snorlax and pixel Z marks; pauses manually, offscreen, in hidden tabs and for reduced motion, with the original image as a still poster."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "tablet",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "app-footer-stack",
+        "value": "600px"
+      },
+      {
+        "name": "compact-via-window",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Translucent button",
+      "kind": "button",
+      "refersTo": "button-translucent",
+      "description": "Compact plain-label homepage action.",
+      "html": "<a class=\"ds-home-button\" href=\"#\">Build something with me</a>",
+      "css": ".ds-home-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border-radius:8px;background:#fafbf9;color:#24312d;font:450 14px/1.5 \"Onest Variable\",sans-serif;text-decoration:none;box-shadow:0 2px 4px #1e416517;transition:background .18s,box-shadow .18s,transform .18s}.ds-home-button:hover{background:#ffffff;box-shadow:0 3px 9px #1e416520}.ds-home-button:active{transform:translateY(1px) scale(.98);box-shadow:none}.ds-home-button:focus-visible{outline:2px solid #127862;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-home-button{transition:none}}.ds-home-button{color:#0d6250;background:#ffffffa6;box-shadow:inset 0 1px 0 #ffffff29}.ds-home-button:hover{background:#ffffffcc}"
+    },
+    {
+      "name": "Light button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Compact plain-label homepage action.",
+      "html": "<a class=\"ds-home-button\" href=\"#\">Explore the projects</a>",
+      "css": ".ds-home-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border-radius:8px;background:#fafbf9;color:#24312d;font:450 14px/1.5 \"Onest Variable\",sans-serif;text-decoration:none;box-shadow:0 2px 4px #1e416517;transition:background .18s,box-shadow .18s,transform .18s}.ds-home-button:hover{background:#ffffff;box-shadow:0 3px 9px #1e416520}.ds-home-button:active{transform:translateY(1px) scale(.98);box-shadow:none}.ds-home-button:focus-visible{outline:2px solid #127862;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-home-button{transition:none}}"
+    },
+    {
+      "name": "Journal button",
+      "kind": "button",
+      "refersTo": "button-journal",
+      "description": "Implemented journal action variant.",
+      "html": "<a class=\"ds-button-journal\" href=\"#\">Find your writing space<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button-journal{display:inline-flex;align-items:center;justify-content:center;gap:17px;min-height:49px;padding:13px 21px;border-radius:7px;background:#3a4939;color:#fff;font:550 15px/1.6 \"Figtree Variable\",sans-serif;text-decoration:none;transition:background .18s,transform .18s}.ds-button-journal:hover{background:#4c604b;transform:translateY(-2px)}.ds-button-journal:focus-visible{outline:3px solid #337a60;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button-journal{transition:none}}"
+    },
+    {
+      "name": "Via button",
+      "kind": "button",
+      "refersTo": "button-via",
+      "description": "Implemented via action variant.",
+      "html": "<a class=\"ds-button-via\" href=\"#\">See how it works<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button-via{display:inline-flex;align-items:center;justify-content:center;gap:17px;min-height:49px;padding:13px 21px;border-radius:7px;background:#315fa1;color:#fff;font:550 15px/1.6 \"Figtree Variable\",sans-serif;text-decoration:none;transition:background .18s,transform .18s}.ds-button-via:hover{background:#244b84;transform:translateY(-2px)}.ds-button-via:focus-visible{outline:3px solid #337a60;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button-via{transition:none}}"
+    },
+    {
+      "name": "Finance button",
+      "kind": "button",
+      "refersTo": "button-finance",
+      "description": "Preserved pill action for Manvalan Finance.",
+      "html": "<a class=\"ds-finance-button\" href=\"#\">Ask about the release</a>",
+      "css": ".ds-finance-button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 23px;border-radius:99px;background:#fff;color:#242228;font:500 15px/1.6 \"Instrument Sans\",sans-serif;text-decoration:none;transition:background-color .2s,box-shadow .2s}.ds-finance-button:hover{background:#faf5ff;box-shadow:0 4px 15px #8d66951a}.ds-finance-button:active{background:#ede3f5}.ds-finance-button:focus-visible{outline:2px solid #7854ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-finance-button{transition:none}}"
+    },
+    {
+      "name": "App navigation",
+      "kind": "nav",
+      "description": "Open navigation shared by Log Horizon and OpenVia.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"App navigation\"><a class=\"ds-brand\" href=\"#\">OpenVia</a><div><a href=\"#features\">Features</a><a href=\"#faq\">FAQ</a><a class=\"ds-release\" href=\"#release\">Get the app</a></div></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 24px;background:#e8f0fb;color:#243249;font:400 13px/1.6 \"Figtree Variable\",sans-serif}.ds-nav a{color:inherit;text-decoration:none}.ds-brand{font-size:18px;font-weight:600;letter-spacing:-.02em}.ds-nav div{display:flex;align-items:center;gap:26px}.ds-release{background:#ffffffa6;padding:8px 13px;border-radius:6px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #337a60;outline-offset:5px}@media(max-width:700px){.ds-nav{padding:22px 20px}.ds-nav div{gap:18px}.ds-nav div>a:first-child{display:none}}"
+    },
+    {
+      "name": "FAQ row",
+      "kind": "custom",
+      "description": "Native disclosure with a fine divider and plus/minus indicator.",
+      "html": "<details class=\"ds-faq\"><summary>Where can I get it?</summary><p>A public release link will be added here when it is ready.</p></details>",
+      "css": ".ds-faq{border-bottom:1px solid var(--line,#e7e9e3);font-family:\"Figtree Variable\",sans-serif;color:var(--ink,#232820)}.ds-faq summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;list-style:none;font-size:15px;font-weight:500}.ds-faq summary::-webkit-details-marker{display:none}.ds-faq summary:after{content:\"+\";font-size:20px;font-weight:400}.ds-faq[open] summary:after{content:\"−\"}.ds-faq summary:focus-visible{outline:3px solid #337a60;outline-offset:5px}.ds-faq p{margin:0;padding-bottom:23px;font-size:14px;line-height:1.8;color:var(--muted,#656b63)}"
+    },
+    {
+      "name": "Routing example selector",
+      "kind": "chip",
+      "description": "White active segment on a pale tray; selection semantics are owned by the app.",
+      "html": "<div class=\"ds-segments\" role=\"group\" aria-label=\"Example links\"><button aria-pressed=\"true\">github.com</button><button aria-pressed=\"false\">notion.so</button><button aria-pressed=\"false\">*.company.com</button></div>",
+      "css": ".ds-segments{display:flex;gap:5px;background:#edf1f7;padding:4px;border-radius:7px;justify-content:center}.ds-segments button{border:0;flex:1;font:400 11px/1.6 \"Figtree Variable\",sans-serif;color:#637086;background:transparent;padding:7px 5px;border-radius:4px;cursor:pointer;white-space:nowrap}.ds-segments button[aria-pressed=true]{color:#2a528a;background:#fff;box-shadow:0 2px 6px #2c4d7112}.ds-segments button:hover{background:#fdfefe}.ds-segments button:focus-visible{outline:3px solid #337a60;outline-offset:5px}"
+    },
+    {
+      "name": "Hyfic wordmark",
+      "kind": "custom",
+      "description": "Plain lowercase Pixeloid Sans Regular, without a colored bolt.",
+      "html": "<a class=\"hyfic-wordmark\" href=\"#\" aria-label=\"Hyfic home\">hyfic</a>",
+      "css": ".hyfic-wordmark {\n    display: inline-block;\n    font-family: 'Pixeloid Sans', sans-serif;\n    font-size: 36px;\n    font-weight: 400;\n    line-height: 1;\n    letter-spacing: 0;\n    color: inherit;\n    text-decoration: none;\n    transition: opacity 180ms;\n  }\n  .hyfic-wordmark:hover {\n    opacity: 0.8;\n  }\n  .hyfic-wordmark:focus-visible {\n    outline: 2px solid currentColor;\n    outline-offset: 6px;\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .hyfic-wordmark {\n      transition: none;\n    }\n  }"
+    },
+    {
+      "name": "Project link",
+      "kind": "card",
+      "description": "Unboxed homepage project text beneath pastel artwork; snippet uses an inline preview silhouette.",
+      "html": "<a class=\"ds-project\" href=\"#\"><div class=\"ds-project-art\"><svg class=\"ds-preview\" width=\"230\" height=\"160\" viewBox=\"0 0 230 160\" aria-hidden=\"true\"><rect x=\"5\" y=\"15\" width=\"220\" height=\"145\" rx=\"7\" fill=\"#faf9f7\"/><path d=\"M45 60h130M45 78h145M45 96h100\" stroke=\"#d6d9d0\" stroke-width=\"3\"/></svg></div><h3>Log Horizon</h3><p>A quiet place for what’s on your mind.</p><span>Journaling · Desktop</span></a>",
+      "css": ".ds-project{display:block;max-width:360px;font-family:\"Onest Variable\",sans-serif;color:#24312d;text-decoration:none}.ds-project-art{height:294px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#eff0f0}.ds-preview{transform:rotate(3deg);transition:transform .3s}.ds-project:hover .ds-preview{transform:translateY(-5px) rotate(0)}.ds-project h3{margin:21px 0 0;font-size:18px;font-weight:500;letter-spacing:-.025em;line-height:1.3}.ds-project:hover h3{transform:translateX(3px)}.ds-project p{color:#65736c;font-size:13px;line-height:1.7;margin:9px 0 0}.ds-project>span{display:block;color:#65736c;font-size:10px;margin-top:10px}.ds-project:focus-visible{outline:2px solid #127862;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-preview{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A maker's living pixel world",
+    "overview": "Hyfic is a playful, professional home for a curious maker. The pinned cofounder.co reference establishes expansive pixel scenery, compact typography and plain controls; it overrides seed aeda37f1. A sleeping Snorlax brings the warmth, while white space and a restrained teal interface keep the work clear.\n\nThe collection holds independent app identities. Log Horizon is quiet, leafy, and literary; OpenVia is a clear blue Mac utility; Manvalan Finance retains its existing pastel financial-app presentation. The homepage pairs Onest with a Pixeloid hero headline and plain Pixeloid Regular wordmark. Approved app routes retain their existing Figtree, Literata, Instrument Sans and Kanit treatments.",
+    "keyCharacteristics": [
+      "Living pixel scenery with a sleeping Snorlax and open white space.",
+      "Pixeloid display type and wordmark with Onest reading copy.",
+      "Teal accents, neutral surfaces, grouped translucent header links and an airy scenic footer.",
+      "Independent app identities and restrained product-preview depth."
+    ],
+    "rules": [
+      {
+        "name": "The Independent Worlds Rule",
+        "body": "Preserve each app’s palette inside its route; the shared Hyfic identity appears as attribution and a way home.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wordmark Rule",
+        "body": "Use plain Pixeloid Regular on the homepage with no colored bolt. Preserve the approved Kanit attribution on app routes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Preview Depth Rule",
+        "body": "Concentrate ambient elevation in product previews; ordinary text sections and project descriptions remain unboxed.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use plain Pixeloid Regular on the homepage and preserve the approved app-route typography.",
+      "Do keep the sleeping Snorlax, crisp pixels, compact controls and generous open space.",
+      "Do preserve all three approved app detail designs and their independent typography.",
+      "Do retain visible keyboard focus, pause control, static fallback and reduced-motion support.",
+      "Do identify illustrative previews and example interactions clearly."
+    ],
+    "donts": [
+      "Don't introduce unrelated blue/cyan UI accents, a colored logo bolt or decorative arrows.",
+      "Don't replace the selected pixel world with a generic agency or dashboard aesthetic.",
+      "Don't apply homepage typography or colors over the independent app routes.",
+      "Don't turn product-preview controls into apparent working form inputs.",
+      "Don't darken the whole hero; preserve the approved video and use local text treatment for readability."
+    ]
+  }
+}

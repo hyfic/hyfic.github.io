@@ -1,0 +1,38 @@
+name: Publish static site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: website
+  cancel-in-progress: true
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - name: Publish generated HTML to website branch
+        run: |
+          git fetch origin website
+          git worktree add --detach "$RUNNER_TEMP/hyfic-website" origin/website
+          git -C "$RUNNER_TEMP/hyfic-website" switch -C website
+          git -C "$RUNNER_TEMP/hyfic-website" rm -r --ignore-unmatch .
+          cp -a dist/. "$RUNNER_TEMP/hyfic-website/"
+          git -C "$RUNNER_TEMP/hyfic-website" add -A
+          if ! git -C "$RUNNER_TEMP/hyfic-website" diff --cached --quiet; then
+            git -C "$RUNNER_TEMP/hyfic-website" config user.name "github-actions[bot]"
+            git -C "$RUNNER_TEMP/hyfic-website" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git -C "$RUNNER_TEMP/hyfic-website" commit -m "Publish Astro site from $GITHUB_SHA"
+            git -C "$RUNNER_TEMP/hyfic-website" push origin HEAD:website
+          fi
